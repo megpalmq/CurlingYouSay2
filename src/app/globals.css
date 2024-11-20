@@ -5,7 +5,6 @@
           box-sizing: border-box;
 }
 
-html,
 body {
   height: 100%;
 }
@@ -20,6 +19,17 @@ p {
   margin-bottom: 16px;
 }
 
+.page {
+  margin-top: 125px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    margin-top: 85px;
+  }
+}
 /* Color Theme Swatches in Hex */
 .Intel-Team-GB-Curling-1-hex {
   color: #233d8c;

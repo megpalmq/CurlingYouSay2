@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
+
 body {
   height: 100%;
 }
@@ -15,6 +15,17 @@ h5,
 h6,
 p {
   margin-bottom: 16px;
+}
+
+.page {
+  margin-top: 125px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    margin-top: 85px;
+  }
 }
 
 /* Color Theme Swatches in Hex */
