@@ -20,23 +20,66 @@ h6,
 p {
   margin-bottom: 16px;
 }
+
 /* Color Theme Swatches in Hex */
-.Intel-Team-GB-Curling-1-hex { color: #233D8C; }
-.Intel-Team-GB-Curling-2-hex { color: #1B2A59; }
-.Intel-Team-GB-Curling-3-hex { color: #1A2440; }
-.Intel-Team-GB-Curling-4-hex { color: #5377A6; }
-.Intel-Team-GB-Curling-5-hex { color: #759CBF; }
+.Intel-Team-GB-Curling-1-hex {
+  color: #233d8c;
+}
+
+.Intel-Team-GB-Curling-2-hex {
+  color: #1b2a59;
+}
+
+.Intel-Team-GB-Curling-3-hex {
+  color: #1a2440;
+}
+
+.Intel-Team-GB-Curling-4-hex {
+  color: #5377a6;
+}
+
+.Intel-Team-GB-Curling-5-hex {
+  color: #759cbf;
+}
 
 /* Color Theme Swatches in RGBA */
-.Intel-Team-GB-Curling-1-rgba { color: rgba(35, 61, 140, 1); }
-.Intel-Team-GB-Curling-2-rgba { color: rgba(26, 42, 89, 1); }
-.Intel-Team-GB-Curling-3-rgba { color: rgba(26, 35, 63, 1); }
-.Intel-Team-GB-Curling-4-rgba { color: rgba(82, 118, 165, 1); }
-.Intel-Team-GB-Curling-5-rgba { color: rgba(116, 156, 191, 1); }
+.Intel-Team-GB-Curling-1-rgba {
+  color: rgb(35, 61, 140);
+}
+
+.Intel-Team-GB-Curling-2-rgba {
+  color: rgb(26, 42, 89);
+}
+
+.Intel-Team-GB-Curling-3-rgba {
+  color: rgb(26, 35, 63);
+}
+
+.Intel-Team-GB-Curling-4-rgba {
+  color: rgb(82, 118, 165);
+}
+
+.Intel-Team-GB-Curling-5-rgba {
+  color: rgb(116, 156, 191);
+}
 
 /* Color Theme Swatches in HSLA */
-.Intel-Team-GB-Curling-1-hsla { color: hsla(225, 60, 34, 1); }
-.Intel-Team-GB-Curling-2-hsla { color: hsla(225, 53, 22, 1); }
-.Intel-Team-GB-Curling-3-hsla { color: hsla(225, 41, 17, 1); }
-.Intel-Team-GB-Curling-4-hsla { color: hsla(213, 33, 48, 1); }
-.Intel-Team-GB-Curling-5-hsla { color: hsla(208, 36, 60, 1); }
+.Intel-Team-GB-Curling-1-hsla {
+  color: hsl(225, 60%, 34%);
+}
+
+.Intel-Team-GB-Curling-2-hsla {
+  color: hsl(225, 53%, 22%);
+}
+
+.Intel-Team-GB-Curling-3-hsla {
+  color: hsl(225, 41%, 17%);
+}
+
+.Intel-Team-GB-Curling-4-hsla {
+  color: hsl(213, 33%, 48%);
+}
+
+.Intel-Team-GB-Curling-5-hsla {
+  color: hsl(208, 36%, 60%);
+}
