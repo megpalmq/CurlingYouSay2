@@ -1,8 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Menu } from "semantic-ui-react";
 import Link from "next/link";
-
+import styles from "./page.module.css";
 export default function NavBar() {
   // State to store the screen width
   const [screenWidth, setScreenWidth] = useState(0);
@@ -46,37 +45,31 @@ export default function NavBar() {
     };
   }, []); // Empty dependency array ensures the effect runs once on mount
   return (
-    <>
-      <Menu className={isToggled ? "navHolder active" : "navHolder"}>
-        <Menu.Item
-          name="mw"
-          as={Link}
-          className="title"
-          onClick={closeNav}
-          href="/"
-        />
-        <div className={isToggled ? "bars active" : "bars"} onClick={toggleNav}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
-        <Menu.Menu className="items">
-          <Menu.Item name="about" as={Link} href="/about" onClick={toggleNav} />
-          <Menu.Item name="work" as={Link} href="/work" onClick={toggleNav} />
-          <Menu.Item
-            name="resume"
-            as={Link}
-            href="/resune"
-            onClick={toggleNav}
-          />
-          <Menu.Item
-            name="contact"
-            as={Link}
-            href="/contact"
-            onClick={toggleNav}
-          />
-        </Menu.Menu>
-      </Menu>
-    </>
+    <div
+      className={
+        isToggled ? `${styles.navHolder} ${styles.active}` : styles.navHolder
+      }
+    >
+      <Link name="home" onClick={closeNav} href="/">
+        <img src="/logo.png" alt="logo" className={styles.logo} />
+      </Link>
+      <div
+        className={isToggled ? `${styles.bars} ${styles.active}` : styles.bars}
+        onClick={toggleNav}
+      >
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+      </div>
+
+      <div className={styles.items}>
+        <Link name="about" href="/about" onClick={toggleNav}>
+          About
+        </Link>
+        <Link name="contact" href="/contact" onClick={toggleNav}>
+          Contact
+        </Link>
+      </div>
+    </div>
   );
 }
