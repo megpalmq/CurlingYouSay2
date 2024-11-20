@@ -1,6 +1,4 @@
-## Group Title
-
-Curling You Say?
+## Curling You Say?
 
 ### Group Members
 
@@ -10,7 +8,7 @@ Curling You Say?
 
 ### Web App Link
 
-https://something.vercel.app
+https://curling-you-say.vercel.app/
 
 ### Category & Topic
 
@@ -41,13 +39,33 @@ This section will break down the pages and components of the web app, specifying
    - Description: Where users can send contact messages to the site admins.
    - Responsible: {Jon}
 
-4. **{Additional Pages}**
-   - {Repeat this pattern for other pages of the app}
+4. **About Page**
+   - Description: Gives a brief history of the sport of curling and explains what curling actually is.
+   - Responsible: {Megan}
+5. **Events Page**
+   - Description: Shows some curling events and tournaments that are happening around the world. And has some links to the events websites.
+   - Responsible: {Megan}
+
+# Simplifed Role Plan
+
+1. Mychal:
+   Navigation
+   Footer
+   Welcome Page
+   Search
+2. Jon: Account sign-up/sign-in
+   Account customization
+   Contact Page
+3. Megan: About Page
+   What is Curling?
+   History of Curling?
+   Events
+   Live Scores
+   Historical Results
 
 ### Sources Cited
 
 This section will list any places where you pulled information from to generate content for your site. If an LMS was used then put you prompt below the link.
 
-- [Google Gemini (AI tool)](https://www.google.com/search?q=crab-walking+techniques&sca_esv=a07f0383584960a3&rlz=1C5GCEM_enUS1122US1122&sxsrf=ADLYWILj8U59y0ykTZ3IZL0PgD0YGsEj6Q%3A1731328027761&ei=G_gxZ_eXLorjwN4P78KPwQg&ved=0ahUKEwi3kdbAo9SJAxWKMdAFHW_hI4gQ4dUDCA8&uact=5&oq=crab-walking+techniques&gs_lp=Egxnd3Mtd2l6LXNlcnAiF2NyYWItd2Fsa2luZyB0ZWNobmlxdWVzMgYQABgWGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESOgGUJEFWJEFcAJ4AZABAJgBUKABUKoBATG4AQPIAQD4AQGYAgOgAlvCAgoQABiwAxjWBBhHmAMAiAYBkAYHkgcBM6AH1wQ&sclient=gws-wiz-serp)
-- [How to Do the Crab Walk](https://www.beachbodyondemand.com/blog/crab-walk-exercise#:~:text=Only%20your%20palms%20and%20the,%2C%E2%80%9D%20says%20Trevor%20Thieme%2C%20C.S.C.S.)
-- [Text for Source](linkForSource)
+-[https://worldcurling.org/]
+deomstrates the curling vibe and information about curling. This is the main source of information for the web app. -[https://worldcurling.org/resources/]
