@@ -69,6 +69,9 @@ export default function NavBar() {
         <Link name="contact" href="/contact" onClick={toggleNav}>
           Contact
         </Link>
+        <Link name="account" href="/account" onClick={toggleNav}>
+          Contact
+        </Link>
       </div>
     </div>
   );
