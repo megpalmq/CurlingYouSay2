@@ -51,7 +51,7 @@ export default function NavBar() {
       }
     >
       <Link name="home" onClick={closeNav} href="/">
-        <img src="/logo.png" alt="logo" className={styles.logo} />
+        <img src="/LOGO.png" alt="logo" className={styles.logo} />
       </Link>
       <div
         className={isToggled ? `${styles.bars} ${styles.active}` : styles.bars}
