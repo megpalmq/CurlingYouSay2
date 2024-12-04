@@ -63,6 +63,9 @@ export default function NavBar() {
       </div>
 
       <div className={styles.items}>
+        <Link name="home" href="/" onClick={toggleNav}>
+          Home
+        </Link>
         <Link name="about" href="/about" onClick={toggleNav}>
           About
         </Link>
