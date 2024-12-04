@@ -1,6 +1,7 @@
 .navHolder {
   position: fixed;
-  background-color: #000;
+  background-color: var(--Deep-Navy);
+
   width: 100vw;
   height: 125px;
   display: flex;
@@ -20,10 +21,11 @@
   }
   a {
     text-decoration: none;
+    letter-spacing: 1px;
     color: #fff;
-    font-family: Montserrat;
+    font-family: Merriweather;
+    font-weight: 900;
     font-size: 16px;
-    text-transform: uppercase;
     height: 125px;
     display: inline-flex;
     align-items: center;
@@ -37,7 +39,7 @@
 .bars {
   opacity: 0;
   display: none;
-  padding: 10.5px 12.5px;
+  padding: 23px 15px;
   float: right;
   cursor: pointer;
   transition: opacity 0.5s;
@@ -45,16 +47,16 @@
 
 .bars .bar {
   display: block;
-  width: 25px;
-  margin: 5px 0;
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
   background-color: #fff;
-  height: 3px;
   border-radius: 5px;
   transition: 0.5s;
 }
 
 .bars.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(-45deg);
+  transform: translate(0, 11px) rotate(-45deg);
 }
 
 .bars.active .bar:nth-child(2) {
@@ -62,20 +64,21 @@
 }
 
 .bars.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(45deg);
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 .items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 314px;
   /* background-color: aqua; */
-  height: 50px;
   overflow: hidden;
   transition: height 0.5s, opacity 0.5s;
+  padding: 0 20px;
+
   a {
     padding: 0 20px;
+    font-size: 20px;
   }
   a.title {
     padding: 0;
@@ -83,7 +86,7 @@
     justify-content: center;
   }
   a:hover {
-    color: #0078d4;
+    color: var(--Bright-Blue);
   }
 }
 
@@ -96,6 +99,7 @@
   .items {
     height: 0;
     opacity: 0;
+    padding: 0;
     flex-direction: column;
     width: 100vw;
     justify-content: space-evenly;
@@ -113,7 +117,6 @@
   .navHolder.active {
     height: 100vh;
     .items {
-      display: flex;
       opacity: 1;
       height: calc(100vh - 50px);
     }
