@@ -1,8 +1,342 @@
+$primary-color: #0077cc;
+$secondary-color: #ffffff;
+$background: rgb(2, 0, 36);
+$background-color: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(9, 9, 121, 1) 35%,
+  rgba(0, 212, 255, 1) 100%
+);
+$animation-duration: 15s;
+$font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background: $background-color;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+// Hero Section Styling
+.hero {
+  position: relative;
+  padding: 10rem 2rem 5rem;
+  text-align: center;
+  z-index: 1;
+  height: 100vh;
+
+  .ripple-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: white;
+      animation: ripple 15s infinite;
+      box-shadow: 0px 0px 1px 0px #508fb9;
+    }
+
+    .small {
+      width: 200px;
+      height: 200px;
+      left: -100px;
+      bottom: -100px;
+      animation: ripple 10s infinite;
+    }
+
+    .medium {
+      width: 400px;
+      height: 400px;
+      left: -200px;
+      bottom: -200px;
+      animation: ripple 12s infinite;
+    }
+
+    .large {
+      width: 600px;
+      height: 600px;
+      left: -300px;
+      bottom: -300px;
+      animation: ripple 14s infinite;
+    }
+
+    .xlarge {
+      width: 800px;
+      height: 800px;
+      left: -400px;
+      bottom: -400px;
+      animation: ripple 16s infinite;
+    }
+
+    .xxlarge {
+      width: 1000px;
+      height: 1000px;
+      left: -500px;
+      bottom: -500px;
+      animation: ripple 18s infinite;
+    }
+
+    .shade1 {
+      opacity: 0.2;
+    }
+
+    .shade2 {
+      opacity: 0.4;
+    }
+
+    .shade3 {
+      opacity: 0.6;
+    }
+
+    .shade4 {
+      opacity: 0.8;
+    }
+
+    .shade5 {
+      opacity: 1;
+    }
+  }
+
+  .heroText {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: flyIn 1.5s ease-out forwards;
+      animation-delay: 0.5s;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    @keyframes flyIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px); // Start off-screen to the left
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0); // End at normal position
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Ripple Animation Keyframes
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
 .main {
+  position: relative;
+  padding: 4rem 2rem;
+  background: $primary-color;
+  color: #fff;
+  z-index: 1;
+  margin-top: -5rem; // Pull the main content up to overlap the hero section
+  border-radius: 1rem; // Optional: rounded corners for a "pop out" effect
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15); // Optional: shadow for pop-out effect
+  animation: popIn 1s ease-out forwards,
+    backgroundAnimation 10s infinite ease-in-out;
+
+  // Background Animation
+  @keyframes backgroundAnimation {
+    0% {
+      background: linear-gradient(135deg, #2a49e9, #18d0ed);
+    }
+    50% {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+    100% {
+      background: linear-gradient(135deg, #62d9f7, #4818c3);
+    }
+  }
+
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+// Section Styling
+.section {
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); // Dark background for sections to stand out
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.75); // Darken background on hover
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: $secondary-color;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
   p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+// Todd Shelton Section Styling
+.todd-shelton-section {
+  background: #f0f0f0;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.todd-shelton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.todd-shelton-image {
+  width: 400px;
+  height: 300px;
+  background-image: url(../../../../public/todd.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 20px;
+  border: 5px solid #0077cc;
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todd-shelton-info h2 {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 1rem;
+  &:hover {
     color: red;
   }
-  background-color: blue;
-  height: auto;
-  width: 100%;
+}
+
+.todd-shelton-info p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+// Additional Styling for Subtle Effects
+h2,
+p {
+  position: relative;
+  z-index: 1;
+}
+
+// Footer Section Styling
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: $primary-color;
+  color: #fff;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+// Hover Effects for Interactive Buttons
+button {
+  padding: 1rem 2rem;
+  background-color: #feb47b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: #ff7e5f;
+    transform: scale(1.05);
+  }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

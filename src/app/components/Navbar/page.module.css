@@ -13,6 +13,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  
   top: 0;
   left: 0;
   margin-bottom: 0;
@@ -34,10 +35,15 @@
   text-decoration: none;
   letter-spacing: 1px;
   color: #fff;
+<<<<<<< HEAD
   font-family: Merriweather;
   font-weight: 900;
+=======
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> 816afafdd3ba854fc645f448369c79ab68122e10
   font-size: 16px;
   height: 125px;
+  font-weight: bold;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
