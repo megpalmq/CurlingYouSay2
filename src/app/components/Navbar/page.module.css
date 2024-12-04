@@ -13,6 +13,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  
   top: 0;
   left: 0;
   margin-bottom: 0;
@@ -33,10 +34,11 @@
 .navHolder a {
   text-decoration: none;
   color: #fff;
-  font-family: Montserrat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   height: 125px;
+  font-weight: bold;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
