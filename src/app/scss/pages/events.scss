@@ -1,4 +1,8 @@
-// Global styles for events page
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 .events-container {
   .hero {
     position: relative;
@@ -63,6 +67,7 @@
       position: relative;
       z-index: 1;
       color: #fff;
+      font-family: Merriweather;
 
       h1 {
         font-size: 3.5rem;
@@ -72,6 +77,7 @@
         transform: translateX(-50px);
         animation: flyIn 1.5s ease-out forwards;
         animation-delay: 0.5s;
+        font-family: Merriweather;
       }
 
       p {
@@ -82,12 +88,16 @@
       }
     }
   }
+  h2 {
+    font-family: Merriweather;
+  }
 
   .event-list {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: space-between;
+    font-family: Merriweather;
   }
 
   .event-card {
