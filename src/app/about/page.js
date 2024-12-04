@@ -15,7 +15,7 @@ export default function About() {
           <div className="circle small shade5"></div>
         </div>
         <div className="heroText">
-          <h1>Discover the Thrill of Curling</h1>
+          <h1>Discover the Thrill of Curling 🥌</h1>
           <p>The sport of strategy, precision, and camaraderie.</p>
         </div>
       </header>
@@ -25,9 +25,13 @@ export default function About() {
         <section className="section">
           <h2>What is Curling?</h2>
           <p>
-            Curling is a team sport played on ice, where players slide stones
-            toward a target area known as the "house." It’s often called “chess
-            on ice” for its deep strategy and precision.
+            Curling is a team sport played on ice where players slide heavy
+            stones toward a circular target, known as the "house." The goal is
+            to position the stones as close to the center of the target as
+            possible, while also using skillful sweeping to influence the
+            stone's speed and direction. Often referred to as "chess on ice" due
+            to its strategic depth, curling combines precision, teamwork, and
+            athleticism, making it a unique and exciting winter sport.
           </p>
         </section>
 
@@ -44,17 +48,35 @@ export default function About() {
         <section className="section">
           <h2>A Rich History</h2>
           <p>
-            Originating in 16th-century Scotland, curling has grown into a
-            globally celebrated sport, becoming an official Winter Olympic event
-            in 1998.
+            Curling has a rich and fascinating history that dates back to the
+            16th century in Scotland. The sport was first played on frozen ponds
+            and lochs, where players would slide stones across the ice toward a
+            target. Early curling stones were made from flat, heavy stones,
+            sometimes with handles carved into them, and the game quickly grew
+            in popularity within local Scottish communities. By the 19th
+            century, curling spread to other parts of the world, including
+            Canada, where it became a national pastime. In 1998, curling was
+            officially added to the Winter Olympic Games, further elevating its
+            international status. Today, curling is played in over 40 countries,
+            with major tournaments such as the World Curling Championships and
+            the Winter Olympics drawing global attention. The sport’s
+            combination of precision, strategy, and teamwork continues to
+            captivate players and fans alike.
           </p>
         </section>
         <section className="section">
           <h2>How to Play Curling</h2>
           <p>
-            Curling is a team sport that involves sliding stones on a sheet of
-            ice towards a target area. The goal is to have your stone closest to
-            the center of the target when all stones have been thrown.
+            To play curling, two teams of four players take turns sliding stones
+            down a sheet of ice toward a circular target called the "house." The
+            goal is to place your team's stones closest to the center of the
+            house by the end of the round. Each team has eight stones, and
+            players take turns throwing them while teammates use brooms to sweep
+            the ice in front of the stone, influencing its speed and direction.
+            The team with the stone closest to the center scores points, with
+            additional points for each stone closer than the opponent's nearest
+            stone. The game combines strategy, precision, and teamwork, with the
+            team that scores the most points over several rounds winning.
           </p>
         </section>
 
