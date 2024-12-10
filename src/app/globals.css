@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +38,7 @@ p {
 :root {
   --Primary-Blue: #233d8c;
   --Dark-Blue: #1b2a59;
-  --Deep-Navy: #1a2440;
+  --Deep-Navy: #051739;
   --Steel-Gray-Blue: #5377a6;
   --Light-Blue: #759cbf;
   --Bright-Blue: #00e7ff;

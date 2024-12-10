@@ -1,5 +1,8 @@
 .navHolder {
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it is above other content */
   background-color: var(--Deep-Navy);
   width: 100vw;
   height: 125px;
