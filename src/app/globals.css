@@ -104,3 +104,17 @@ p {
 .Intel-Team-GB-Curling-5-hsla {
   color: hsl(208, 36%, 60%);
 }
+
+.sign-in-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  position: relative; /* Position relative for absolute children */
+}
+
+.sign-in-container .clerk-sign-in {
+  max-width: 400px; /* Set a max width for the sign-in box */
+  width: 100%; /* Make it responsive */
+  margin: auto; /* Center the sign-in box */
+}

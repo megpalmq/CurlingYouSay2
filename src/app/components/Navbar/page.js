@@ -1,6 +1,8 @@
+// src/app/components/Navbar/page.js
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { UserButton } from "@clerk/nextjs"; // Import UserButton
 import styles from "./page.module.css";
 
 export default function NavBar() {
@@ -56,6 +58,7 @@ export default function NavBar() {
         <Link name="about" href="/about" onClick={toggleNav}>About</Link>
         <Link name="events" href="/events" onClick={toggleNav}>Events</Link>
         <Link name="contact" href="/contact" onClick={toggleNav}>Contact</Link>
+        <UserButton />
       </div>
     </div>
   );
