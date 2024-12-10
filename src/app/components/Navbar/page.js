@@ -45,7 +45,7 @@ export default function NavBar() {
   return (
     <div className={isToggled ? `${styles.navHolder} ${styles.active}` : styles.navHolder}>
       <Link name="home" onClick={closeNav} href="/">
-        <img src="/LOGO.png" alt="logo" className={styles.logo} />
+        <img src="/cys-logo.png" alt="logo" className={styles.logo} />
       </Link>
       <div className={isToggled ? `${styles.bars} ${styles.active}` : styles.bars} onClick={toggleNav}>
         <span className={styles.bar}></span>

@@ -3,7 +3,7 @@ import { ClerkProvider, SignedIn, SignedOut, SignIn } from "@clerk/nextjs";
 import NavBar from "./components/Navbar/page";
 import "./globals.css";
 import { useState } from "react";
-import { metadata } from "./metadata"; // Import metadata
+import { metadata } from "./metadata";
 
 export default function RootLayout({ children }) {
   const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;

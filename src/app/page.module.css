@@ -1,6 +1,6 @@
-  .hero {
+.hero {
     position: relative;
-    height: 100vh; 
+    height: 100vh;
     background-image: url('../../public/curling-hero.png');
     background-size: cover;
     background-position: center;
@@ -28,13 +28,11 @@
     margin-bottom: 10px;
   }
   
-
   .heroContent p {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
   
-  /* Media Queries*/
   @media (max-width: 1200px) {
     .hero {
       padding-left: 30px;
@@ -59,71 +57,159 @@
     }
   
     .heroContent p {
-      font-size: 1rem; 
+      font-size: 1rem;
     }
   }
   
   @media (max-width: 480px) {
     .hero {
-      padding-left: 10px; 
+      padding-left: 10px;
     }
   
     .heroContent h1 {
-      font-size: 2rem; 
+      font-size: 2rem;
     }
   
     .heroContent p {
-      font-size: 0.9rem; 
+      font-size: 0.9rem;
     }
   }
-
-/* About Curling Section */
-.aboutCurling {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between text and image */
-    padding: 50px; /* Add padding */
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
-
+  
+  .aboutCurling {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
   }
   
   .aboutText {
-    flex: 1; /* Allow text to take available space */
-    margin-right: 20px; /* Space between text and image */
+    flex: 1;
+    margin-right: 20px;
   }
   
   .aboutText h2 {
-    font-size: 2.5rem; /* Heading size */
-    margin-bottom: 10px; /* Space below heading */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
     font-family: 'Bungee', sans-serif;
   }
   
   .aboutText p {
-    font-size: 1.2rem; /* Paragraph size */
-    margin-bottom: 20px; /* Space below paragraph */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
   }
   
   .aboutButton {
-    padding: 10px 20px; /* Button padding */
-    background-color: #0077cc; /* Button color */
-    color: white; /* Button text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Transition for hover effect */
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
     font-family: 'Bungee', sans-serif;
   }
   
   .aboutButton:hover {
-    background-color: #005fa3; /* Darker color on hover */
+    background-color: #005fa3;
   }
   
   .aboutImage {
-    flex: 1; /* Allow image to take available space */
-    max-width: 800px; /* Limit image width */
+    flex: 1;
+    max-width: 800px;
   }
   
   .aboutImage img {
-    width: 100%; /* Make image responsive */
-    border-radius: 10px; /* Rounded corners for image */
+    width: 100%;
+    border-radius: 40px;
+  }
+
+  .curlingEvents {
+    padding: 50px;
+    background-color: rgba(240, 240, 240, 0.9);
+    text-align: left;
+  }
+  
+  .eventsHeader {
+    margin-bottom: 20px;
+  }
+  
+  .curlingEvents h2 {
+    font-size: 2.5rem;
+    font-family: 'Bungee', sans-serif;
+  }
+  
+  .learnMoreContainer {
+    margin-bottom: 20px;
+  }
+  
+  .learnMoreButton {
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Bungee', sans-serif;
+  }
+  
+  .learnMoreButton:hover {
+    background-color: #005fa3;
+  }
+  
+  .eventList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .eventCard {
+    background-color: #005fa3;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-image: url('../../public/worldcurling-pattern.eb3ab0.svg');
+    background-position: center;
+  }
+  
+  .eventCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .eventImage1, .eventImage2, .eventImage3, .eventImage4 {
+    width: 100%;
+    height: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:  10px, 10px, 0px, 0px;
+  }
+  
+  .eventImage1 {
+    background-image: url('../../public/WC.jpg');
+  }
+  
+  .eventImage2 {
+    background-image: url('../../public/wo.avif');
+  }
+  
+  .eventImage3 {
+    background-image: url('../../public/cc.jpg');
+  }
+  
+  .eventImage4 {
+    background-image: url('../../public/gc.jpeg');
+  }
+
+  .eventCard h3 {
+    margin: 40px;
+    text-align: center;
+    flex: 1;
+    font-family: 'Bungee', sans-serif;
   }

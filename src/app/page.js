@@ -14,7 +14,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About  Section */}
+        {/* About Curling Section */}
         <section className={styles.aboutCurling}>
           <div className={styles.aboutText}>
             <h2>About Curling</h2>
@@ -26,7 +26,35 @@ export default function Home() {
             <a href="/about" className={styles.aboutButton}>Learn More</a>
           </div>
           <div className={styles.aboutImage}>
-            <img src="/curling-about-img.jpg" alt="Curling" /> {/* Replace with your image path */}
+            <img src="/curling-about-img.jpg" alt="Curling" />
+          </div>
+        </section>
+
+        {/* Curling Events Section */}
+        <section className={styles.curlingEvents}>
+          <div className={styles.eventsHeader}>
+            <h2>Curling Events</h2>
+          </div>
+          <div className={styles.learnMoreContainer}>
+            <a href="/about" className={styles.learnMoreButton}>Learn More</a>
+          </div>
+          <div className={styles.eventList}>
+            <div className={styles.eventCard}>
+              <div className={styles.eventImage1} />
+              <h3>World Curling Championships</h3>
+            </div>
+            <div className={styles.eventCard}>
+              <div className={styles.eventImage2} />
+              <h3>Winter Olympics Curling</h3>
+            </div>
+            <div className={styles.eventCard}>
+              <div className={styles.eventImage3} />
+              <h3>Continental Cup of Curling</h3>
+            </div>
+            <div className={styles.eventCard}>
+              <div className={styles.eventImage4} />
+              <h3>Grand Slam of Curling</h3>
+            </div>
           </div>
         </section>
       </main>
