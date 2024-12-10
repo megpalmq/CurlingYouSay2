@@ -76,3 +76,54 @@
       font-size: 0.9rem; 
     }
   }
+
+/* About Curling Section */
+.aboutCurling {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and image */
+    padding: 50px; /* Add padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+
+  }
+  
+  .aboutText {
+    flex: 1; /* Allow text to take available space */
+    margin-right: 20px; /* Space between text and image */
+  }
+  
+  .aboutText h2 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 10px; /* Space below heading */
+    font-family: 'Bungee', sans-serif;
+  }
+  
+  .aboutText p {
+    font-size: 1.2rem; /* Paragraph size */
+    margin-bottom: 20px; /* Space below paragraph */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .aboutButton {
+    padding: 10px 20px; /* Button padding */
+    background-color: #0077cc; /* Button color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    font-family: 'Bungee', sans-serif;
+  }
+  
+  .aboutButton:hover {
+    background-color: #005fa3; /* Darker color on hover */
+  }
+  
+  .aboutImage {
+    flex: 1; /* Allow image to take available space */
+    max-width: 800px; /* Limit image width */
+  }
+  
+  .aboutImage img {
+    width: 100%; /* Make image responsive */
+    border-radius: 10px; /* Rounded corners for image */
+  }
