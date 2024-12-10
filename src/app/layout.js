@@ -1,3 +1,4 @@
+
 import NavBar from "./components/Navbar/page";
 import "./globals.css";
 
@@ -7,12 +8,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const clerkFrontendApi = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
+
   return (
-    <html lang="en">
-      <body>
-        <NavBar />
-        <div className="page">{children}</div>
-      </body>
-    </html>
+      <html lang="en">
+        <body>
+          <NavBar />
+          <div className="page">{children}</div>
+        </body>
+      </html>
   );
 }
