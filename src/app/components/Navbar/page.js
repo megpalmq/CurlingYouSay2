@@ -63,14 +63,20 @@ export default function NavBar() {
       </div>
 
       <div className={styles.items}>
+        <Link name="home" href="/" onClick={toggleNav}>
+          Home
+        </Link>
         <Link name="about" href="/about" onClick={toggleNav}>
           About
+        </Link>
+        <Link name="events" href="/events" onClick={toggleNav}>
+          Events
         </Link>
         <Link name="contact" href="/contact" onClick={toggleNav}>
           Contact
         </Link>
         <Link name="account" href="/account" onClick={toggleNav}>
-          Contact
+          Account
         </Link>
       </div>
     </div>

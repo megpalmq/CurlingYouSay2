@@ -1,6 +1,6 @@
 .navHolder {
   position: fixed;
-  background-color: #000;
+  background-color: var(--Deep-Navy);
   width: 100vw;
   height: 125px;
   display: -webkit-box;
@@ -13,6 +13,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  
   top: 0;
   left: 0;
   margin-bottom: 0;
@@ -32,11 +33,13 @@
 }
 .navHolder a {
   text-decoration: none;
+  letter-spacing: 1px;
   color: #fff;
-  font-family: Montserrat;
+  font-family: Merriweather;
+  font-weight: 900;
   font-size: 16px;
-  text-transform: uppercase;
   height: 125px;
+  font-weight: bold;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -53,7 +56,7 @@
 .bars {
   opacity: 0;
   display: none;
-  padding: 10.5px 12.5px;
+  padding: 23px 15px;
   float: right;
   cursor: pointer;
   -webkit-transition: opacity 0.5s;
@@ -62,18 +65,18 @@
 
 .bars .bar {
   display: block;
-  width: 25px;
-  margin: 5px 0;
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
   background-color: #fff;
-  height: 3px;
   border-radius: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .bars.active .bar:nth-child(1) {
-  -webkit-transform: translateY(8px) rotate(-45deg);
-          transform: translateY(8px) rotate(-45deg);
+  -webkit-transform: translate(0, 11px) rotate(-45deg);
+          transform: translate(0, 11px) rotate(-45deg);
 }
 
 .bars.active .bar:nth-child(2) {
@@ -81,8 +84,8 @@
 }
 
 .bars.active .bar:nth-child(3) {
-  -webkit-transform: translateY(-8px) rotate(45deg);
-          transform: translateY(-8px) rotate(45deg);
+  -webkit-transform: translate(0, -11px) rotate(45deg);
+          transform: translate(0, -11px) rotate(45deg);
 }
 
 .items {
@@ -95,15 +98,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 314px;
   /* background-color: aqua; */
-  height: 50px;
   overflow: hidden;
   -webkit-transition: height 0.5s, opacity 0.5s;
   transition: height 0.5s, opacity 0.5s;
+  padding: 0 20px;
 }
 .items a {
   padding: 0 20px;
+  font-size: 20px;
 }
 .items a.title {
   padding: 0;
@@ -113,7 +116,7 @@
           justify-content: center;
 }
 .items a:hover {
-  color: #0078d4;
+  color: var(--Bright-Blue);
 }
 
 @media screen and (max-width: 768px) {
@@ -124,6 +127,7 @@
   .items {
     height: 0;
     opacity: 0;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -147,9 +151,6 @@
     height: 100vh;
   }
   .navHolder.active .items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     opacity: 1;
     height: calc(100vh - 50px);
   }
