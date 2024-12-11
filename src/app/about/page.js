@@ -39,7 +39,7 @@ export default function About() {
           <h2>The Curling Experience</h2>
           <p>
             Teams use skillful sweeping and strategic play to position their
-            stones while disrupting the opponent’s game plan. It's a blend of
+            stones while disrupting the opponent's game plan. It's a blend of
             physics, teamwork, and skill, making it both challenging and
             rewarding.
           </p>
@@ -59,7 +59,7 @@ export default function About() {
             officially added to the Winter Olympic Games, further elevating its
             international status. Today, curling is played in over 40 countries,
             with major tournaments such as the World Curling Championships and
-            the Winter Olympics drawing global attention. The sport’s
+            the Winter Olympics drawing global attention. The sport's
             combination of precision, strategy, and teamwork continues to
             captivate players and fans alike.
           </p>

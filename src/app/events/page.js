@@ -47,7 +47,7 @@ export default function Events() {
               <div className="event-image2" />
               <h3>Winter Olympics Curling</h3>
               <p>
-                Watch the best curlers compete for Olympic gold. It’s the
+                Watch the best curlers compete for Olympic gold. It's the
                 ultimate test of skill and strategy.
               </p>
               <a
@@ -79,7 +79,7 @@ export default function Events() {
               <div className="event-image4" />
               <h3>Grand Slam of Curling</h3>
               <p>
-                A series of prestigious curling events showcasing the world’s
+                A series of prestigious curling events showcasing the world's
                 top teams battling for glory.
               </p>
               <a
