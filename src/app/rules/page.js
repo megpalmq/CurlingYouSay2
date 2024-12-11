@@ -40,7 +40,7 @@ export default function Rules() {
               <h3>Scoring</h3>
               <p>
                 Points are awarded for each stone closer to the center than the
-                opponent's closest stone at the end of an "end" (round).
+                opponent's closest stone at the end of an "end"(round).
               </p>
             </div>
             <div className="rule-card">
