@@ -43,21 +43,39 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className={isToggled ? `${styles.navHolder} ${styles.active}` : styles.navHolder}>
+    <div
+      className={
+        isToggled ? `${styles.navHolder} ${styles.active}` : styles.navHolder
+      }
+    >
       <Link name="home" onClick={closeNav} href="/">
         <img src="/cys-logo.png" alt="logo" className={styles.logo} />
       </Link>
-      <div className={isToggled ? `${styles.bars} ${styles.active}` : styles.bars} onClick={toggleNav}>
+      <div
+        className={isToggled ? `${styles.bars} ${styles.active}` : styles.bars}
+        onClick={toggleNav}
+      >
         <span className={styles.bar}></span>
         <span className={styles.bar}></span>
         <span className={styles.bar}></span>
       </div>
 
       <div className={styles.items}>
-        <Link name="home" href="/" onClick={toggleNav}>Home</Link>
-        <Link name="about" href="/about" onClick={toggleNav}>About</Link>
-        <Link name="events" href="/events" onClick={toggleNav}>Events</Link>
-        <Link name="contact" href="/contact" onClick={toggleNav}>Contact</Link>
+        <Link name="home" href="/" onClick={toggleNav}>
+          Home
+        </Link>
+        <Link name="about" href="/about" onClick={toggleNav}>
+          About
+        </Link>
+        <Link name="events" href="/events" onClick={toggleNav}>
+          Events
+        </Link>
+        <Link name="events" href="/rules" onClick={toggleNav}>
+          Rules and Strategies
+        </Link>
+        <Link name="contact" href="/contact" onClick={toggleNav}>
+          Contact
+        </Link>
         <UserButton />
       </div>
     </div>
