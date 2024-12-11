@@ -26,7 +26,7 @@ export default function About() {
           <h2>What is Curling?</h2>
           <p>
             Curling is a team sport played on ice where players slide heavy
-            stones toward a circular target, known as the house. The goal is
+            stones toward a circular targetpm known as the house. The goal is
             to position the stones as close to the center of the target as
             possible, while also using skillful sweeping to influence the
             stone's speed and direction. Often referred to as chess on ice due
